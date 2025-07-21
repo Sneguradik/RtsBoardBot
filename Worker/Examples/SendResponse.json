@@ -1,0 +1,75 @@
+{
+  "errors": {
+    "documentError": null,
+    "fieldErrors": [],
+    "xmlErrors": [],
+    "xml": "",
+    "hasAny": false
+  },
+  "document": {
+    "instrument": "ABRD",
+    "trader": {
+      "id": 1557,
+      "login": "ValerTRD",
+      "firstName": "Валерий",
+      "lastName": "Иванов"
+    },
+    "party": "TECH1",
+    "counterpartyIds": [],
+    "HasCounterparties": false,
+    "isTargeted": false,
+    "isDynamic": false,
+    "quoteRequestId": null,
+    "frontTradeId": null,
+    "comment": "Тестовая котировка",
+    "clientCode": "проверка123",
+    "price": 1.00000,
+    "standardPrice": 0.0097,
+    "quantity": 2.00000,
+    "direction": "BUY",
+    "isIndicative": false,
+    "priceCurrency": "RUB",
+    "nominalCurrency": "RUB",
+    "isPartialExecution": true,
+    "isInformationQuote": false,
+    "isAnonymousQuote": false,
+    "showIfTheBest": false,
+    "timeToLive": "GTD",
+    "expirationDate": "2025-07-15T00:00:00.000Z",
+    "deliveryMethod": "DeliveryVersusPayment",
+    "settlementDate": "2025-07-18T00:00:00.000Z",
+    "deliveryDate": "2025-07-18T00:00:00.000Z",
+    "settlementCurrency": "RUB",
+    "exchangeRate": 0.00000,
+    "settlementPlace": "SPB",
+    "details": null,
+    "id": "S9DKA7JG1J-QT00-17LF8OFWJEYYR2D3NJPIM9M1E1",
+    "rev": 2,
+    "marks": null,
+    "state": {
+      "id": "ACTIVE",
+      "lockState": "RELEASED",
+      "actions": [
+        "cancel"
+      ],
+      "error": {
+        "id": null,
+        "message": {
+          "en": null,
+          "ru": null
+        }
+      },
+      "changeDate": "2025-07-14T10:19:18.650Z",
+      "changedBy": 1557
+    },
+    "isValid": null,
+    "description": {
+      "en": "Buy 2 / 1 RUB",
+      "ru": "Покупка 2 / 1 RUB"
+    },
+    "content": null,
+    "schemaVersion": "8",
+    "rowVersion": null
+  },
+  "success": true
+}

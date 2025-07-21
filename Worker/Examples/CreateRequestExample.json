@@ -1,0 +1,52 @@
+{
+  "document": {
+    "instrument": "ABRD",
+    "party": null,
+    "trader": {
+      "lastName": "",
+      "firstName": "",
+      "id": 1
+    },
+    "rev": 1,
+    "state": {
+      "id": "",
+      "lockState": "RELEASED",
+      "actions": [
+        "create"
+      ],
+      "changeDate": "2025-07-14T10:16:18.510Z",
+      "changedBy": null
+    },
+    "counterpartyIds": null,
+    "isTargeted": false,
+    "isIndicative": false,
+    "isDynamic": false,
+    "isAnonymousQuote": false,
+    "showIfTheBest": false,
+    "price": 1,
+    "priceCurrency": "RUB",
+    "nominalCurrency": "",
+    "quantity": 2,
+    "direction": "BUY",
+    "description": {
+      "en": "Buy 2 / 1 RUB",
+      "ru": "Покупка 2 / 1 RUB"
+    },
+    "clientCode": "проверка123",
+    "comment": "Тестовая котировка",
+    "settlementCurrency": "",
+    "deliveryMethod": "",
+    "settlementPlace": "SPB",
+    "timeToLive": "GTD",
+    "expirationDate": "2025-07-15T00:00:00.000Z",
+    "details": {},
+    "isPartialExecution": true,
+    "isInformationQuote": false,
+    "actions": [
+      "create"
+    ],
+    "$dirty": true,
+    "baseUrl": "/api/quote",
+    "content": "<rtsotc:equityTransaction id=\"EquityTransaction1\" xmlns=\"http://www.fpml.org/FpML-5/confirmation\" xmlns:rtsotc=\"http://www.fpml.ru/otc-system\" xmlns:rtsrep=\"http://www.fpml.ru/repository\" xmlns:fpmlext=\"http://www.fpml.org/FpML-5/ext\" xmlns:dsig=\"http://www.w3.org/2000/09/xmldsig#\"><productType>EquityTransaction</productType><productId>ABRD</productId><buyerPartyReference href=\"quote-owner\"/><sellerPartyReference href=\"counterparty\"/><rtsotc:issuingVolumes>98000184</rtsotc:issuingVolumes><rtsotc:numberOfUnits>2</rtsotc:numberOfUnits><rtsotc:unitPrice>1</rtsotc:unitPrice><rtsotc:priceCurrency>RUB</rtsotc:priceCurrency><rtsotc:equity id=\"ABRD\"><instrumentId instrumentIdScheme=\"http://www.fpml.ru/coding-scheme/instrument-id#code\">ABRD</instrumentId><instrumentId instrumentIdScheme=\"http://www.fpml.ru/coding-scheme/instrument-id#regnum\">1-02-12500-A</instrumentId><instrumentId instrumentIdScheme=\"http://www.fpml.ru/coding-scheme/instrument-id#isin\">RU000A0JS5T7</instrumentId><description>ПАО \"Абрау – Дюрсо\", ао</description><currency id=\"Currency1\">RUB</currency></rtsotc:equity><rtsotc:unitNotional>1.00000</rtsotc:unitNotional><rtsotc:deliveryMethod>DeliveryVersusPayment</rtsotc:deliveryMethod><rtsotc:settlementDate>2025-07-18</rtsotc:settlementDate><rtsotc:deliveryDate>2025-07-18</rtsotc:deliveryDate><rtsotc:settlementCurrency>RUB</rtsotc:settlementCurrency></rtsotc:equityTransaction>"
+  }
+}

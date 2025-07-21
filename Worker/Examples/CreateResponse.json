@@ -1,0 +1,80 @@
+{
+  "errors": {
+    "documentError": null,
+    "fieldErrors": [],
+    "xmlErrors": [],
+    "xml": "<rtsotc:quote otcSchemaVersion=\"8\" xmlns:fpml=\"http://www.fpml.org/FpML-5/confirmation\" xmlns:ds=\"http://www.w3.org/2000/09/xmldsig#\" xmlns:ecore=\"http://www.eclipse.org/emf/2002/Ecore\" xmlns:fpml-annotation=\"http://www.fpml.org/annotation\" xmlns:rtsotc=\"http://www.fpml.ru/otc-system\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\r\n  <rtsotc:equityTransaction id=\"EquityTransaction1\" xmlns=\"http://www.fpml.org/FpML-5/confirmation\" xmlns:rtsrep=\"http://www.fpml.ru/repository\" xmlns:fpmlext=\"http://www.fpml.org/FpML-5/ext\" xmlns:dsig=\"http://www.w3.org/2000/09/xmldsig#\">\r\n    <productType>EquityTransaction</productType>\r\n    <productId>ABRD</productId>\r\n    <buyerPartyReference href=\"quote-owner\" />\r\n    <sellerPartyReference href=\"counterparty\" />\r\n    <rtsotc:issuingVolumes>98000184</rtsotc:issuingVolumes>\r\n    <rtsotc:numberOfUnits>2</rtsotc:numberOfUnits>\r\n    <rtsotc:unitPrice>1</rtsotc:unitPrice>\r\n    <rtsotc:priceCurrency>RUB</rtsotc:priceCurrency>\r\n    <rtsotc:equity id=\"ABRD\">\r\n      <instrumentId instrumentIdScheme=\"http://www.fpml.ru/coding-scheme/instrument-id#code\">ABRD</instrumentId>\r\n      <instrumentId instrumentIdScheme=\"http://www.fpml.ru/coding-scheme/instrument-id#regnum\">1-02-12500-A</instrumentId>\r\n      <instrumentId instrumentIdScheme=\"http://www.fpml.ru/coding-scheme/instrument-id#isin\">RU000A0JS5T7</instrumentId>\r\n      <description>ПАО \"Абрау – Дюрсо\", ао</description>\r\n      <currency id=\"Currency1\">RUB</currency>\r\n    </rtsotc:equity>\r\n    <rtsotc:unitNotional>1.00000</rtsotc:unitNotional>\r\n    <rtsotc:deliveryMethod>DeliveryVersusPayment</rtsotc:deliveryMethod>\r\n    <rtsotc:settlementDate>2025-07-18</rtsotc:settlementDate>\r\n    <rtsotc:deliveryDate>2025-07-18</rtsotc:deliveryDate>\r\n    <rtsotc:settlementCurrency>RUB</rtsotc:settlementCurrency>\r\n  </rtsotc:equityTransaction>\r\n  <fpml:party id=\"quote-owner\">\r\n    <fpml:partyId>TECH1</fpml:partyId>\r\n    <fpml:partyName>Техническая поддержка системы Quatro</fpml:partyName>\r\n    <fpml:country>RU</fpml:country>\r\n    <fpml:jurisdiction>RU</fpml:jurisdiction>\r\n    <fpml:organizationType>Other</fpml:organizationType>\r\n    <fpml:contactInfo>\r\n      <fpml:telephone>\r\n        <fpml:number>+7(495)7059031</fpml:number>\r\n      </fpml:telephone>\r\n      <fpml:address xsi:type=\"rtsotc:Address\">\r\n        <rtsotc:postAddress>Москва, ул. Долгоруковская, д. 38 стр. 1</rtsotc:postAddress>\r\n        <rtsotc:legalAddress>Москва, ул. Долгоруковская, д. 38 стр. 1</rtsotc:legalAddress>\r\n      </fpml:address>\r\n    </fpml:contactInfo>\r\n  </fpml:party>\r\n  <fpml:party id=\"counterparty\">\r\n    <fpml:partyId>UNDEF</fpml:partyId>\r\n  </fpml:party>\r\n</rtsotc:quote>",
+    "hasAny": false
+  },
+  "document": {
+    "instrument": "ABRD",
+    "trader": {
+      "id": 1557,
+      "login": "ValerTRD",
+      "firstName": "Валерий",
+      "lastName": "Иванов"
+    },
+    "party": "TECH1",
+    "counterpartyIds": [],
+    "HasCounterparties": false,
+    "isTargeted": false,
+    "isDynamic": false,
+    "quoteRequestId": null,
+    "frontTradeId": null,
+    "comment": "Тестовая котировка",
+    "clientCode": "проверка123",
+    "price": 1.0,
+    "standardPrice": 0.0097,
+    "quantity": 2.0,
+    "direction": "BUY",
+    "isIndicative": false,
+    "priceCurrency": "RUB",
+    "nominalCurrency": "RUB",
+    "isPartialExecution": true,
+    "isInformationQuote": false,
+    "isAnonymousQuote": false,
+    "showIfTheBest": false,
+    "timeToLive": "GTD",
+    "expirationDate": "2025-07-15T00:00:00.000Z",
+    "deliveryMethod": "DeliveryVersusPayment",
+    "settlementDate": "2025-07-18T00:00:00.000Z",
+    "deliveryDate": "2025-07-18T00:00:00.000Z",
+    "settlementCurrency": "RUB",
+    "exchangeRate": 0.0,
+    "settlementPlace": "SPB",
+    "details": null,
+    "id": "S9DKA7JG1J-QT00-17LF8OFWJEYYR2D3NJPIM9M1E1",
+    "rev": 1,
+    "marks": null,
+    "state": {
+      "id": "DRAFT",
+      "lockState": "RELEASED",
+      "actions": [
+        "lock",
+        "unlock",
+        "update",
+        "delete",
+        "validate",
+        "send"
+      ],
+      "error": {
+        "id": null,
+        "message": {
+          "en": null,
+          "ru": null
+        }
+      },
+      "changeDate": "2025-07-14T10:19:18.290Z",
+      "changedBy": 1557
+    },
+    "isValid": true,
+    "description": {
+      "en": "Buy 2 / 1 RUB",
+      "ru": "Покупка 2 / 1 RUB"
+    },
+    "content": "<rtsotc:equityTransaction id=\"EquityTransaction1\" xmlns=\"http://www.fpml.org/FpML-5/confirmation\" xmlns:rtsrep=\"http://www.fpml.ru/repository\" xmlns:fpmlext=\"http://www.fpml.org/FpML-5/ext\" xmlns:dsig=\"http://www.w3.org/2000/09/xmldsig#\" xmlns:rtsotc=\"http://www.fpml.ru/otc-system\">\r\n  <productType>EquityTransaction</productType>\r\n  <productId>ABRD</productId>\r\n  <buyerPartyReference href=\"quote-owner\" />\r\n  <sellerPartyReference href=\"counterparty\" />\r\n  <rtsotc:issuingVolumes>98000184</rtsotc:issuingVolumes>\r\n  <rtsotc:numberOfUnits>2</rtsotc:numberOfUnits>\r\n  <rtsotc:unitPrice>1</rtsotc:unitPrice>\r\n  <rtsotc:priceCurrency>RUB</rtsotc:priceCurrency>\r\n  <rtsotc:equity id=\"ABRD\">\r\n    <instrumentId instrumentIdScheme=\"http://www.fpml.ru/coding-scheme/instrument-id#code\">ABRD</instrumentId>\r\n    <instrumentId instrumentIdScheme=\"http://www.fpml.ru/coding-scheme/instrument-id#regnum\">1-02-12500-A</instrumentId>\r\n    <instrumentId instrumentIdScheme=\"http://www.fpml.ru/coding-scheme/instrument-id#isin\">RU000A0JS5T7</instrumentId>\r\n    <description>ПАО \"Абрау – Дюрсо\", ао</description>\r\n    <currency id=\"Currency1\">RUB</currency>\r\n  </rtsotc:equity>\r\n  <rtsotc:unitNotional>1.00000</rtsotc:unitNotional>\r\n  <rtsotc:deliveryMethod>DeliveryVersusPayment</rtsotc:deliveryMethod>\r\n  <rtsotc:settlementDate>2025-07-18</rtsotc:settlementDate>\r\n  <rtsotc:deliveryDate>2025-07-18</rtsotc:deliveryDate>\r\n  <rtsotc:settlementCurrency>RUB</rtsotc:settlementCurrency>\r\n</rtsotc:equityTransaction>",
+    "schemaVersion": "8",
+    "rowVersion": null
+  },
+  "success": true
+}
