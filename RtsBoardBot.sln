@@ -8,6 +8,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application", "Application\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure", "Infrastructure\Infrastructure.csproj", "{5FB42279-E6F4-40F0-9699-5085B71563B8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tinkoff.InvestApi", "Tinkoff.InvestApi\Tinkoff.InvestApi.csproj", "{75A2D87B-6A9F-4903-B860-ADDB55FD8B71}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +32,9 @@ Global
 		{5FB42279-E6F4-40F0-9699-5085B71563B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5FB42279-E6F4-40F0-9699-5085B71563B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5FB42279-E6F4-40F0-9699-5085B71563B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{75A2D87B-6A9F-4903-B860-ADDB55FD8B71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75A2D87B-6A9F-4903-B860-ADDB55FD8B71}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75A2D87B-6A9F-4903-B860-ADDB55FD8B71}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75A2D87B-6A9F-4903-B860-ADDB55FD8B71}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

@@ -56,7 +56,6 @@ public class TinkoffMarketDataService(InvestApiClient client, IInstrumentRepo in
                     
                     InstrumentId = instrument.InstrumentUid,
                     Depth = 1,
-                    OrderBookType = OrderBookType.All
                 } },
                 SubscriptionAction = SubscriptionAction.Subscribe
             }
