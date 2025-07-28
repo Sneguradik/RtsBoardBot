@@ -10,19 +10,35 @@ public class MarketDataWorker(IServiceProvider serviceProvider, IInstrumentRepo 
     
     protected override async Task ExecuteAsync(CancellationToken stoppingToken)
     {
-        var quotationService = _scope.ServiceProvider.GetRequiredService<IQuotationService>();
-        var marketDataService = _scope.ServiceProvider.GetRequiredService<IMarketDataService>();
-        
-        var instruments = await marketDataService.GetAllInstruments(stoppingToken);
-        
-        logger.LogInformation($"Instruments loaded : {instruments.Count()}");
-        
-        instrumentRepo.AddInstrument(instruments.Where(x=>tickers.Value.Contains(x.Ticker)));
-        
-        logger.LogInformation($"Instruments saved. Currently : {instrumentRepo.GetInstruments().Count()}");
+        while (!stoppingToken.IsCancellationRequested)
+        {
+            try
+            {
+                using var scope = serviceProvider.CreateScope();
 
-        await quotationService.InitAsync(stoppingToken);
-        await quotationService.RunAsync(stoppingToken);
+                var quotationService = scope.ServiceProvider.GetRequiredService<IQuotationService>();
+                var marketDataService = scope.ServiceProvider.GetRequiredService<IMarketDataService>();
+                var instruments = await marketDataService.GetAllInstruments(stoppingToken);
+            
+                logger.LogInformation($"Instruments loaded: {instruments.Count()}");
+
+                instrumentRepo.AddInstrument(instruments.Where(x => tickers.Value.Contains(x.Ticker)));
+                logger.LogInformation($"Instruments saved. Currently: {instrumentRepo.GetInstruments().Count()}");
+
+                await quotationService.InitAsync(stoppingToken);
+                await quotationService.RunAsync(stoppingToken); 
+            }
+            catch (OperationCanceledException)
+            {
+                logger.LogInformation("Worker stopping gracefully.");
+                break;
+            }
+            catch (Exception ex)
+            {
+                logger.LogError(ex, "Unhandled exception in MarketDataWorker. Retrying in 5s...");
+                await Task.Delay(TimeSpan.FromSeconds(5), stoppingToken);
+            }
+        }
     }
 
     public override void Dispose()

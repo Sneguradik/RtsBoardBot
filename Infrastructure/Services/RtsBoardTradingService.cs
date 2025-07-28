@@ -37,7 +37,7 @@ public class RtsBoardTradingService(HttpClient httpClient, IRtsBoardAuthService 
             },
             CounterpartyIds = null,
             Price = level.Price,
-            PriceCurrency = boardInstrument.Currency,
+            PriceCurrency = "RUB",
             Quantity = level.Volume,
             Direction = level.Direction.ToString().ToUpper(),
             ClientCode = "проверка123",

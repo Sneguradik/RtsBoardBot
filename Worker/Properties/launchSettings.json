@@ -5,7 +5,8 @@
       "commandName": "Project",
       "dotnetRunMessages": true,
       "environmentVariables": {
-        "DOTNET_ENVIRONMENT": "Development"
+        "DOTNET_ENVIRONMENT": "Development",
+        "TinkoffToken" : "t.HJ28F-SFcrGwLaxCBtiZGz2rkfKfPItA4Xn3HopM534wQmUyVk0NH-zwXvgTtap3KyF5gDUcT4-spanzqvd-Qw"
       }
     }
   }
